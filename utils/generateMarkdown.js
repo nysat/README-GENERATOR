@@ -41,7 +41,7 @@ How to use this application: ${data.usage}
 ${data.contributing}
 ## License
 This project is licensed under the ${data.license} license. ${renderLicenseBadge(data.license)}
-## Testing 
+## Test
 ${data.test}
 ## Questions 
 If there is any questions please send your questions [here](${data.email}) or visit [github/${data.username}](https://github.com/${data.username}).
