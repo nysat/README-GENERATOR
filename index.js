@@ -14,7 +14,7 @@ const questions = [
     {
         type: 'input', 
         name: 'description',
-        message: 'Provide a short description explaining what was your motivation, why did you build this project, what problem does it solve and what did you learn?'
+        message: 'Provide a short description explaining what was your motivation?, why did you build this project?, what problem does it solve? and what did you learn?'
     }, 
     {
         type: 'input',
@@ -29,7 +29,7 @@ const questions = [
     {
         type: 'input',
         name: 'table of contents',
-        message: 'Table of contents'
+        message: 'Table of contents (press enter)'
     },
     {
         type: 'input',
@@ -61,7 +61,7 @@ const questions = [
     {
         type: 'input',
         name: 'questions',
-        message: 'Refer to contact info'
+        message: 'Refer to contact info (press enter)'
     },
     {
         type: 'input',
@@ -76,8 +76,16 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data) 
+function writeToFile(fileName, data,) {
+    fs.writeFile(fileName, data, function(err) {
+        console.log(fileName)
+        console.log(data)
+        if (err) {
+            return console.log ('error occured')
+        } else {
+            console.log('Success! here is your file!')
+        }
+    }) 
 }
 
 // TODO: Create a function to initialize app
