@@ -5,7 +5,7 @@
 ##### Deployed Application
 n/a
 ##### Screenshot
-![alt-text]()
+![alt-text](./images/readmescreenshot.png)
 ## Table of contents
 * [Description](#description)
 * [Installation](#installation)
